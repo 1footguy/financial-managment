@@ -107,9 +107,7 @@ export default function App() {
         />
 
       </div>
-
-      {/* Customer modal */}
-
+      
       {isCustomerModalOpen && (
         <CustomerModal
           customerName={customerName}
@@ -122,8 +120,6 @@ export default function App() {
           onClose={() => setIsCustomerModalOpen(false)}
         />
       )}
-
-      {/* Purchase modal */}
 
       {isPurchaseModalOpen && (
         <PurchaseModal
@@ -149,8 +145,6 @@ export default function App() {
           onClose={closePurchaseModal}
         />
       )}
-
-      {/* Payment modal */}
 
       {isPaymentModalOpen && (
         <PaymentModal
